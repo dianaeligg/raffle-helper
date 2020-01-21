@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Batalla Sorteo 360</title>
+    <script src="https://kit.fontawesome.com/3dfee92732.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/battle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="title">
+                <img src="./images/360.png" alt="TEC Logo" class="main-logo">
+                <span class="title-text">Sorteo del 360</span>
+                <span class="selected-student"> </span>
+                <input class="input-1"></input>
+                <input class="input-2"></input>
+                <button id="btn-battle">Battle!</button>
+            </div>            
+        </header>
+        <div class="container">
+            <aside class="a-left" >
+                <div class="player-circle player-1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="player-name player-name-1">@diana</div>
+                    <progress class="progress-1" max="10" value="10"></progress>
+                </div>
+                
+            </aside>
+            <aside class="a-right">
+                <div class="player-circle player-2">
+                    <div class="player-name player-name-2">@dianaseviltwin</div>
+                    <progress class="progress-2" max="10" value="10"></progress>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/battle.js"></script>
+</body>
+</html>

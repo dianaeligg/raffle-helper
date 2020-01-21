@@ -1,0 +1,58 @@
+
+$tec-blue: rgb(0,51,153);
+$xbox-green: rgb(33,156,13);
+$dark-grey: #212121;
+$med-grey: #515151;
+$light-grey: rgb(193,193,193);
+$lighter-grey: #d3d3d3;
+
+body, html{
+    margin: 0;
+    background: $xbox-green;
+}
+
+body{
+  height: 100%;
+  font-family: 'Montserrat';
+}
+
+.main-logo{
+  width: 80px;
+}
+
+aside{
+  width: 50%;
+  float: left;
+  height: 80vh;
+  display: flex;
+}
+
+.player-circle{
+  
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 150px;
+  transition: all 0.1s ease-in-out;
+}
+
+.player-1{
+  background: red;
+}
+
+.player-2{
+  background: blue;
+}
+
+.player-name{
+  font-size: 2em;
+  margin: 150px;
+}
+
+.a-right{
+  
+}
+
+.a-left{
+  // background: $lighter-grey;
+}

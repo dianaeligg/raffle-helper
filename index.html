@@ -4,49 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Random Students</title>
+    <title>Sorteo 360</title>
     <script src="https://kit.fontawesome.com/3dfee92732.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
     <div class="wrapper">
         <aside>
             <div class="title">
-                <img src="./images/tec.png" alt="TEC Logo" class="main-logo">
-                <span class="title-text">Whose turn is it?</span>
-            </div>
-            <div class="students">
-                <div class="select-buttons">
-                    <button id="btnSelectAll">Select All</button>
-                    <button id="btnSelectNone">Select None</button>
-                </div>
-                <div class="student-list">
-                </div>
-            </div>
+                <img src="./images/360.png" alt="TEC Logo" class="main-logo">
+                <span class="title-text">Sorteo del 360</span>
+                <span class="selected-student"> </span>
+                <span class="title-active">Restantes: </span>
+                <button id="btn-randomize">Randomize!</button>
+                <button id="btn-export">Export!</button>
+            </div>            
         </aside>
-        <div class="container">
+        <!-- <div class="container">
             <div class="image-container">
                 <div class='student-image-bck'></div>
                 <span class="selected-student">A cute kitty</span>
-                <button id="btn-randomize">Randomize!</button>
             </div>
-        </div>
-        <input id="file-input" type="file" name="name" style="display: none;" />
-        <div class="import-div">
-            <div class="import-text">
-                Import JSON
-                <i class="fas fa-file-upload"></i>
-            </div>
-        </div>
-
-        <div class="open-div">
-            <div class="open-text">
-                <i class="fas fa-chevron-up"></i>
-                <i class="fas fa-chevron-down" hidden></i>
-            </div>
-        </div>
+        </div> -->
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/random.js"></script>

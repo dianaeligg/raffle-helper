@@ -8,31 +8,26 @@ body {
 }
 
 aside {
-  background: #003399;
-  width: 25%;
-  float: left;
+  background: #219c0d;
   height: 100vh;
   color: white;
-  -webkit-box-shadow: 5px 0px 5px 0 #515151;
-          box-shadow: 5px 0px 5px 0 #515151;
   z-index: 40;
   visibility: visible;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 
 button {
   padding: 8px;
   font-weight: bold;
-  -webkit-box-shadow: 1px 1px 1px 0px #bdbdbd;
-          box-shadow: 1px 1px 1px 0px #bdbdbd;
+  -webkit-box-shadow: 1px 1px 1px 0px #c1c1c1;
+          box-shadow: 1px 1px 1px 0px #c1c1c1;
   border: none;
   font-family: 'Montserrat';
+  margin: 15px;
 }
 
 button:active {
-  -webkit-box-shadow: inset 2px 2px 2px 0px #bdbdbd;
-          box-shadow: inset 2px 2px 2px 0px #bdbdbd;
+  -webkit-box-shadow: inset 2px 2px 2px 0px #c1c1c1;
+          box-shadow: inset 2px 2px 2px 0px #c1c1c1;
 }
 
 .select-buttons {
@@ -65,7 +60,7 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .title .main-logo {
@@ -75,7 +70,7 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 10px;
+  margin: 15px 15px;
 }
 
 .title .title-text {
@@ -84,7 +79,29 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 74%;
+  width: 30%;
+}
+
+.title .title-active {
+  font-size: 1.8em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+}
+
+.title .selected-student {
+  font-size: 1.8em;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+}
+
+.students {
+  float: left;
 }
 
 .image-container #btn-randomize {
@@ -150,20 +167,21 @@ button:active {
 }
 
 .import-div .import-text:active {
-  -webkit-box-shadow: inset 2px 2px 2px 0px #bdbdbd;
-          box-shadow: inset 2px 2px 2px 0px #bdbdbd;
+  -webkit-box-shadow: inset 2px 2px 2px 0px #c1c1c1;
+          box-shadow: inset 2px 2px 2px 0px #c1c1c1;
 }
 
 /* begin checkboxes code */
 .input-group {
   background-color: #d3d3d3;
   display: block;
-  margin: 6px 0;
+  margin: 5px 0px;
   position: relative;
+  width: 95%;
 }
 
 .input-group label {
-  padding: 6px 30px;
+  padding: 6px 40px 6px 25px;
   width: 100%;
   display: block;
   text-align: left;
@@ -182,7 +200,7 @@ button:active {
   height: 10px;
   border-radius: 50%;
   content: '';
-  background-color: #5562eb;
+  background-color: #d3d3d3;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -216,7 +234,7 @@ button:active {
 }
 
 .input-group input:checked ~ label {
-  color: #fff;
+  color: black;
 }
 
 .input-group input:checked ~ label:before {
@@ -231,8 +249,8 @@ button:active {
   background-position: 3px 3px;
   background-color: green;
   border-color: green;
-  -webkit-box-shadow: 1px 0px 1px 0 #bdbdbd;
-          box-shadow: 1px 0px 1px 0 #bdbdbd;
+  -webkit-box-shadow: 1px 0px 1px 0 #c1c1c1;
+          box-shadow: 1px 0px 1px 0 #c1c1c1;
 }
 
 .input-group input {

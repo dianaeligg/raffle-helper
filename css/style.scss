@@ -1,8 +1,9 @@
 
 $tec-blue: rgb(0,51,153);
+$xbox-green: rgb(33,156,13);
 $dark-grey: #212121;
 $med-grey: #515151;
-$light-grey: #bdbdbd;
+$light-grey: rgb(193,193,193);
 $lighter-grey: #d3d3d3;
 
 body, html{
@@ -15,15 +16,13 @@ body{
 }
 
 aside{
-    background: $tec-blue;
-    width: 25%;
-    float:left;
+    background: $xbox-green;
     height: 100vh;
     color: white;
-    box-shadow: 5px 0px 5px 0 $med-grey;
+    // box-shadow: 5px 0px 5px 0 $med-grey;
     z-index: 40;
     visibility: visible;
-    transition: all 1s ease-in-out;
+    // transition: all 1s ease-in-out;
 }
 
 button{
@@ -32,6 +31,7 @@ button{
     box-shadow: 1px 1px 1px 0px $light-grey; 
     border: none;
     font-family: 'Montserrat';
+    margin: 15px;
 }
 
 button:active{
@@ -65,22 +65,38 @@ button:active{
 
 .title{
     display: flex;
-    margin-top: 15px;
+    margin-top: 0;
 
     .main-logo{
         width: 25%;
         height: 25%;
         max-width: 80px;
         display: flex;
-        margin: auto 10px;
+        margin: 15px 15px;
     }
     
     .title-text{
         font-size: 1.8em;
         margin: auto;
         display: flex;
-        width:74%;
+        width:30%;
     }
+    .title-active{
+        font-size: 1.8em;
+        margin: auto;
+        display: flex;
+        width:20%;
+    }
+    .selected-student{
+        font-size: 1.8em;
+        margin: auto;
+        display: flex;
+        width:20%;
+    }
+}
+
+.students{
+  float: left;
 }
 
 .image-container{
@@ -156,11 +172,12 @@ button:active{
 .input-group {
   background-color: $lighter-grey;
   display: block;
-  margin: 6px 0;
+  margin: 5px 0px;
   position: relative;
+  width: 95%;
 
   label {
-    padding: 6px 30px;
+    padding: 6px 40px 6px 25px;
     width: 100%;
     display: block;
     text-align: left;
@@ -177,7 +194,7 @@ button:active{
       height: 10px;
       border-radius: 50%;
       content: '';
-      background-color: #5562eb;
+      background-color: $lighter-grey;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -208,7 +225,7 @@ button:active{
   }
 
   input:checked ~ label {
-    color: #fff;
+    color: black;
 
     &:before {
       transform: translate(-50%, -50%) scale3d(56, 56, 1);
